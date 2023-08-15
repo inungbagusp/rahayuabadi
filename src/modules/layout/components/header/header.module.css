@@ -1,0 +1,87 @@
+.wrapperHeader {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 110px;
+    align-items: center;
+    z-index: 10;
+}
+
+.wrapperHeader h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+    color: #2C3136;
+    margin: 24px 0;
+}
+
+.wrapperHeader .midHeader {
+    display: flex;
+    gap: 56px;
+}
+
+.wrapperHeader .drawer {
+    display: none;
+}
+
+.wrapperHeader .midHeader .midHeaderItem {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #838486;
+    margin: 0;
+}
+
+.wrapperHeader .midHeader .midHeaderItem:hover {
+    color: #128FE1;
+}
+
+.wrapperHeader .midHeader .active {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #128FE1;
+    margin: 0;
+}
+
+.wrapperHeader .buttonContactMe {
+    min-width: 184px;
+    border-radius: 4px;
+    height: 40px;
+    background-color: #128FE1;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    border: unset;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.wrapperHeader .buttonContactMe:hover {
+    background-color: #0E6BA9;
+}
+
+.wrapperHeader button:active {
+    background-color: #094871;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapperHeader {
+        padding: 16px;
+        align-items: unset;
+    }
+
+    .wrapperHeader .midHeader {
+        display: none;
+    }
+
+    .wrapperHeader .buttonContactMe {
+        display: none;
+    }
+
+    .wrapperHeader .drawer {
+        display: block;
+    }
+}
