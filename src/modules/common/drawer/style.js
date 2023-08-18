@@ -33,6 +33,7 @@ const useStyles = makeStyles(() => ({
             justifyContent: 'space-between',
             marginBottom: '32px',
             alignItems: 'center',
+            gap: '16px',
         },
         '& .burger-item': {
             fontSize: '16px',

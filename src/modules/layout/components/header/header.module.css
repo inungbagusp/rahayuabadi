@@ -8,6 +8,11 @@
     z-index: 10;
 }
 
+.wrapperHeader .logoTitle {
+    color: #2C3136;
+    font-weight: bold;
+}
+
 .wrapperHeader h3 {
     font-weight: 700;
     font-size: 24px;
@@ -70,7 +75,7 @@
 @media screen and (max-width: 768px) {
     .wrapperHeader {
         padding: 16px;
-        align-items: unset;
+        align-items: center;
     }
 
     .wrapperHeader .midHeader {

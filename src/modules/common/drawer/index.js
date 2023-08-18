@@ -23,17 +23,17 @@ const BurgerMenu = (props) => {
             <SwipeableDrawer anchor="right" open={open} onClose={() => setOpen(false)} onOpen={() => setOpen(true)}>
                 <div className={styles.sidebar}>
                     <div className="wrapper-header">
-                        <Image className="img-logo" src="/img/logo.svg" alt="logo" width={52} height={32} />
+                        <h3>Rahayu Abadi</h3>
                         <CloseIcon onClick={() => setOpen(false)} className={styles.closeIcon} />
                     </div>
                     <Link legacyBehavior href="/" as="/">
                         <a className={router.pathname === '/' ? 'burger-item active' : 'burger-item'}>Home</a>
                     </Link>
-                    <Link legacyBehavior href="/profile" as="/profile">
+                    <Link legacyBehavior href="/" as="/">
                         <a className={router.pathname === '/profile' ? 'burger-item active' : 'burger-item'}>Profile</a>
                     </Link>
-                    <Link legacyBehavior href="/experience" as="/experience">
-                        <a className={router.pathname === '/experience' ? 'burger-item active' : 'burger-item'}>Experience</a>
+                    <Link legacyBehavior href="/" as="/">
+                        <a className={router.pathname === '/experience' ? 'burger-item active' : 'burger-item'}>Product</a>
                     </Link>
                 </div>
             </SwipeableDrawer>

@@ -29,7 +29,7 @@ const Header = () => {
     return (
         <div className={styles.wrapperHeader} id='header'>
             <Link legacyBehavior href="/" as="/">
-                <a><Image img src="/img/logo.svg" alt="logo" width={52} height={32} /></a>
+                <a className={styles.logoTitle}>Rahayu Abadi</a>
             </Link>
             <div className={styles.midHeader}>
                 <Link legacyBehavior href="/" as="/">
@@ -37,19 +37,19 @@ const Header = () => {
                         <p className={router.pathname === '/' ? styles.active : styles.midHeaderItem}>Home</p>
                     </a>
                 </Link>
-                <Link legacyBehavior href="/profile" as="/profile">
+                <Link legacyBehavior href="/" as="/">
                     <a>
                         <p className={router.pathname === '/profile' ? styles.active : styles.midHeaderItem}>Profile</p>
                     </a>
                 </Link>
-                <Link legacyBehavior href="/experience" as="/experience">
+                <Link legacyBehavior href="/" as="/">
                     <a>
-                    <p className={router.pathname === '/experience' ? styles.active : styles.midHeaderItem}>Experience</p>
+                    <p className={router.pathname === '/experience' ? styles.active : styles.midHeaderItem}>Product</p>
                     </a>
                 </Link>
             </div>
             <button type="button" className={styles.buttonContactMe}>
-                <a href="https://api.whatsapp.com/send?phone=+6285733745088&amp;text=Halo" target="__blank">Contact me</a>
+                <a href="https://api.whatsapp.com/send?phone=+6282333265159&amp;text=Halo" target="__blank">Contact us</a>
             </button>
             
             {/* mobile header */}

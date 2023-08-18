@@ -2,7 +2,7 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "@layout": ["src/modules/layout"]
+      "@layout": ["./src/modules/layout"]
     }
   }
 }

@@ -17,6 +17,12 @@
 
 @media only screen and (max-width: 768px) {
 
+    .footerGlobal {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
     .wrapperFooter {
         display: flex;
         flex-direction: column;
