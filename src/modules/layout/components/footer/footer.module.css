@@ -1,0 +1,33 @@
+.wrapperFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 110px;
+    height: 92px;
+    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.13);
+}
+
+.wrapperFooter span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #73777A;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .footerGlobal {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .wrapperFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+}
