@@ -1,6 +1,5 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 import Link from 'next/link';
 import MobileDrawer from '../../../common/drawer';
 import styles from './header.module.css';
@@ -29,7 +28,7 @@ const Header = () => {
     return (
         <div className={styles.wrapperHeader} id='header'>
             <Link legacyBehavior href="/" as="/">
-                <a className={styles.logoTitle}>Rahayu Abadi</a>
+                <a><img src="/assets/icon/logo_ra.svg" alt="logo" width={60} /></a>
             </Link>
             <div className={styles.midHeader}>
                 <Link legacyBehavior href="/" as="/">
