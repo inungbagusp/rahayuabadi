@@ -34,16 +34,7 @@ a {
 }
 
 .whatsapp {
-  position: fixed;
-  right: 10px;
-  bottom: 30%;
-  z-index: 99;
-}
-.whatsapp img {
-	width: 40px;
-	animation: bounce 3s;
-	animation-iteration-count: infinite;
-	animation-delay: 5s;
+	display: none;
 }
 
 @-webkit-keyframes bounce { 
@@ -59,10 +50,23 @@ a {
  }
 
 @media only screen and (max-width: 768px) {
-  body {
-    min-height: 100vh;
-  }
+	body {
+		min-height: 100vh;
+	}
 	.navigation-mobile .MuiDrawer-paperAnchorRight {
 		width: 100%;
+	}
+	.whatsapp {
+		display: block;
+		position: fixed;
+		right: 10px;
+		bottom: 30%;
+		z-index: 99;
+	}
+	.whatsapp img {
+		width: 40px;
+		animation: bounce 3s;
+		animation-iteration-count: infinite;
+		animation-delay: 5s;
 	}
 }
