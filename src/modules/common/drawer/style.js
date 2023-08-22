@@ -40,11 +40,11 @@ const useStyles = makeStyles(() => ({
             fontWeight: '400',
             lineHeight: '28px',
             letterSpacing: '0.2px',
-            color: '#838486',
+            color: '#747474',
             margin: '0 0 16px 0',
         },
         '& .burger-item.active': {
-            color: '#128FE1',
+            color: '#212828',
             fontWeight: '600',
         },
     },

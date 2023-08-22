@@ -2,7 +2,6 @@
 import React from 'react';
 import Link from 'next/link';
 import IconButton from '@material-ui/core/IconButton';
-import Image from 'next/image';
 import CloseIcon from '@material-ui/icons/Close';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import useStyles from './style';
@@ -20,10 +19,10 @@ const BurgerMenu = (props) => {
                 <path d="M0.5 0.333252H15.5V1.99992H0.5V0.333252ZM0.5 6.16658H15.5V7.83325H0.5V6.16658ZM0.5 11.9999H15.5V13.6666H0.5V11.9999Z" fill="#2C3136"/>
             </svg>
             </IconButton>
-            <SwipeableDrawer anchor="right" open={open} onClose={() => setOpen(false)} onOpen={() => setOpen(true)}>
+            <SwipeableDrawer className="navigation-mobile" anchor="right" open={open} onClose={() => setOpen(false)} onOpen={() => setOpen(true)}>
                 <div className={styles.sidebar}>
                     <div className="wrapper-header">
-                        <h3>Rahayu Abadi</h3>
+                        <img src="/assets/icon/logo_ra.svg" alt="logo" width={60} />
                         <CloseIcon onClick={() => setOpen(false)} className={styles.closeIcon} />
                     </div>
                     <Link legacyBehavior href="/" as="/">
