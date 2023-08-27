@@ -1,0 +1,90 @@
+.containerAboutUs {
+    padding: 0 110px;
+    margin: 80px 0;
+}
+
+.containerAboutUs .AboutUsTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.containerAboutUs .AboutUsTitle h3 {
+    font-size: 16px;
+    letter-spacing: 0.16px;
+}
+
+.containerAboutUs .AboutUsTitle h2 {
+    font-size: 24px;
+    letter-spacing: 0.24px;
+}
+
+.containerAboutUs .AboutUsTitle p {
+    font-size: 16px;
+    letter-spacing: 0.24px;
+    line-height: 24px;
+}
+
+.AboutUsBody {
+    display: flex;
+    gap: 64px;
+}
+
+.AboutUsBody .leftContent {
+    width: 50%;
+}
+
+.AboutUsBody .leftContent img {
+    width: 100%;
+    height: auto;
+}
+
+.AboutUsBody .rightContent {
+    width: 50%;
+}
+
+.AboutUsBody .rightContent .rightContentFeatured {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.AboutUsBody .rightContent .rightContentFeatured h3 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.16px;
+    margin-bottom: 8px;
+}
+
+.AboutUsBody .rightContent .rightContentFeatured p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerAboutUs {
+        padding: 0 20px;
+        margin: 40px 0;
+    }
+
+    .AboutUsBody {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .containerAboutUs .AboutUsTitle {
+        margin-bottom: 40px;
+    }
+
+    .AboutUsBody .rightContent .rightContentFeatured {
+        margin-bottom: 24px;
+    }
+
+    .AboutUsBody .leftContent, .AboutUsBody .rightContent {
+        width: 100%;
+    }
+}

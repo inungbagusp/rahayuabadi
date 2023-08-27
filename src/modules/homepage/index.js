@@ -1,11 +1,10 @@
 import Layout from '@layout';
+import Content from './components';
 
 const Homepage = () => {
     return (
         <Layout>
-            <div className="homepageWrapper">
-                <img src="/assets/img/maintenance.webp" />
-            </div>
+            <Content />
         </Layout>
     )
 }

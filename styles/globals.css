@@ -24,17 +24,13 @@ a {
   text-decoration: none;
 }
 
-.homepageWrapper {
-  padding-top: 84px;
-  text-align: center;
-}
-.homepageWrapper img {
-  width: 100%;
-  height: auto;
-}
-
 .whatsapp {
 	display: none;
+}
+
+.change-background {
+	background-color: #FFFFFF;
+	box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.13);
 }
 
 @-webkit-keyframes bounce { 
@@ -68,5 +64,8 @@ a {
 		animation: bounce 3s;
 		animation-iteration-count: infinite;
 		animation-delay: 5s;
+		background: #FFFFFF;
+		border-radius: 100%;
+		box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.13);
 	}
 }
